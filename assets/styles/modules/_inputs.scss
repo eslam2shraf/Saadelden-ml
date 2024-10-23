@@ -1,0 +1,248 @@
+.input {
+  position: relative;
+  margin-bottom: toRem(15);
+
+  .input__label {
+    &::before {
+      content: attr(title);
+      position: absolute;
+      top: toRem(0);
+      left: toRem(15);
+      font-size: toRem($field_2 + 2);
+      line-height: toRem($field_1_Lh * 1.6);
+      line-height: toRem(40);
+      font-size: toRem(14);
+      color: $D_Grey;
+      transition: 300ms all;
+    }
+  }
+
+  &__field {
+    padding: 0 toRem(15);
+    box-sizing: border-box;
+    font-size: toRem($field_1);
+    line-height: toRem($field_1_Lh * 1.6);
+    color: $Grey;
+    border: toRem(1) solid $Black--50;
+    border-radius: toRem(8);
+
+    &:hover {
+      border: toRem(1) solid $Black--50;
+    }
+
+    &:focus {
+      background: transparent;
+      border: toRem(1) dashed $Black--50;
+      outline: none;
+      color: $D_Grey;
+    }
+
+    &:valid+.input__label {
+      &::before {
+        @extend .label-before;
+        content: attr(title);
+      }
+    }
+
+    &:focus+.input__label {
+      &::before {
+        @extend .label-before;
+        color: $primary_D_Blue;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+  }
+  &__errorMsg{
+    width: 100% !important;
+    left: 0 !important;
+    top: 119% !important;
+  }
+}
+
+.select_wrapper--lg {
+  padding: toRem(16);
+
+  .select {
+    width: 100%;
+    padding: toRem(10);
+    background: transparent;
+    border: toRem(1.5) solid $Grey;
+    border-radius: toRem(8);
+  }
+}
+
+.select-wrapper {
+  position: relative;
+
+  .select {
+    padding: toRem(10);
+    background: transparent;
+    border: none;
+  }
+}
+
+.select-year {
+  width: toRem(107.917);
+  height: toRem(32);
+  border-radius: toRem(16);
+  background-color: transparent;
+  text-align: center;
+  &:focus{
+    outline: none;
+  }
+}
+
+.select-filter {
+  margin-bottom: toRem(8);
+
+  .select {
+    width: 95%;
+    cursor: pointer;
+    padding-bottom: 0;
+    font-size: toRem(14);
+
+  }
+
+  option {
+    max-height: toRem(200);
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $l-d-yellow--50;
+    border-radius: toRem(0) toRem(0) toRem(5) toRem(5);
+
+    &:hover {
+      background-color: $status-red;
+    }
+
+    &:checked {
+      color: $Black;
+      font-weight: bold;
+    }
+  }
+
+  &:focus {
+    transform: rotate(0);
+  }
+
+  &::after {
+    content: "";
+    transform: rotate(-90deg);
+    z-index: 98;
+  }
+}
+
+.label-before {
+  font-size: toRem($field_2);
+  line-height: toRem($field_2_Lh);
+  top: toRem(-10);
+  left: toRem(9);
+  background: inherit;
+  color: $Grey;
+  padding: 0 toRem(6);
+}
+
+.search_input {
+  .input__field {
+    background-color: transparent;
+    width: toRem(250);
+    height: toRem(32);
+    border-radius: toRem(16);
+    font-size: toRem(12);
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $White;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type="date"] {
+  display: flex;
+  padding: toRem(4) toRem(10);
+  justify-content: center;
+  align-items: center;
+  gap: toRem(8);
+  border-radius: toRem(16);
+  border: toRem(0.576) solid $Black--50;
+  width: toRem(144);
+  height: toRem(32);
+  font-size: toRem(12);
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1rem $l-d-yellow;
+  }
+
+  &:hover {
+    border: toRem(0.576) solid $Black;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    width: toRem(10);
+    padding: toRem(4);
+    top: toRem(4.6);
+    right: toRem(8);
+    bottom: 0;
+    cursor: pointer;
+    background-color: $prairie-dust;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+}
+.error_input {
+  border: toRem(1) solid $status-red;
+}
+
+.erormsg {
+  color: $status-red;
+}
+
+.input-date--sm{
+  gap: toRem(8);
+  
+  .input{
+    input{
+      width: toRem(110);
+      height: toRem(26);
+      font-size: toRem(10.368);
+      &::-webkit-calendar-picker-indicator {
+        top: toRem(3);
+        right: toRem(5);
+      }
+    }
+  }
+}
+.input-date--lg{
+  gap: toRem(12);
+}
+.filter-lable{
+  font-size: toRem(14.976);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (max-width: $between-md-lg) and (min-width: 0px) {
+  .yearpicker--sm{
+    width: toRem(90);
+  }
+}

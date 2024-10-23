@@ -1,0 +1,65 @@
+.container {
+  @include make-container;
+}
+
+.container-fluid {
+  padding-right: toRem($gutter);
+  padding-left: toRem($gutter);
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid--50 {
+  padding-right: toRem(50) !important;
+  padding-left: toRem(50) !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@include responsiveContainer;
+
+.row {
+  display: flex;
+  //  flex-wrap: wrap;
+  margin-right: toRem(-$gutter * .5);
+  margin-left: toRem(-$gutter * .5);
+
+  @include grid-cols('all');
+}
+
+@media screen and (max-width: $screen-lg) {
+  .container-fluid--50 {
+    padding-right: unset !important;
+    padding-left: unset !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width:$screen-sm) {
+  .row {
+    @include grid-cols('sm');
+  }
+}
+
+@media (min-width:$screen-md) {
+  .row {
+    @include grid-cols('md');
+  }
+}
+
+@media (min-width:$screen-lg) {
+  .row {
+    @include grid-cols('lg');
+  }
+}
+
+@media (min-width:$screen-xl) {
+  .row {
+    @include grid-cols('xl');
+  }
+}
+
+@media (min-width:$screen-xxl) {
+  .row {
+    @include grid-cols('xxl');
+  }
+}

@@ -1,0 +1,486 @@
+.button {
+  color: $D_Grey;
+  outline: none;
+  background-color: transparent;
+  border-color: L_Grey;
+  border-radius: toRem(8);
+  font-size: toRem($btn_med);
+  font-weight: toRem($body_Fw);
+  line-height: toRem($btn_med_Lh);
+  letter-spacing: toRem(0.32);
+  cursor: pointer;
+
+  &:hover {
+    background: $Silver;
+  }
+
+  &:active,
+  &.active {
+    background: $Grey-blue;
+  }
+
+  &[disabled] {
+    background: $Silver;
+    border-color: $Silver;
+    color: $D_Grey;
+    cursor: not-allowed;
+  }
+}
+
+.button--lg {
+  padding: toRem(20) toRem(52);
+  font-size: toRem($btn_lg);
+  line-height: toRem($btn_lg_Lh);
+}
+
+.button--md {
+  padding: toRem(16) toRem(47);
+  font-size: toRem($btn_med);
+  line-height: toRem($btn_med_Lh);
+}
+
+.button--sm {
+  padding: toRem(12) toRem(39);
+  font-size: toRem($btn_sm);
+  line-height: toRem($btn_sm_Lh);
+}
+
+.button--xs {
+  padding: toRem(8) toRem(27);
+  font-size: toRem($btn_xsm);
+  line-height: toRem($btn_xsm_Lh);
+}
+
+.nxt-btn {
+  position: absolute;
+  border: none;
+  top: 44%;
+  left: 82%;
+  background-color: $nordic-noir;
+  color: $White;
+  width: toRem(55);
+  height: toRem(55);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.pre-btn {
+  position: absolute;
+  border: none;
+  top: 44%;
+  right: 82%;
+  background-color: $nordic-noir;
+  color: $White;
+  width: toRem(55);
+  height: toRem(55);
+  border-radius: 50%;
+  text-align: center;
+
+  img {
+    transform: rotate(180deg);
+    margin: toRem(5) toRem(3) 0 0;
+  }
+}
+
+.btn-NORDIC {
+  color: $White;
+  background: $nordic-noir;
+  border-color: none;
+
+  &:hover {
+    background: $primary_D_Blue;
+  }
+
+  &:active,
+  &.active {
+    background: $primary_M_Blue;
+    border-color: $primary_M_Blue;
+  }
+
+  &[disabled] {
+    background: $primary_L_Blue;
+    border-color: $primary_L_Blue;
+    color: $D_Grey;
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary {
+  color: $White;
+  background: $primary_D_Blue;
+  border-color: $primary_D_Blue;
+
+  &:hover {
+    background: $primary_Navy;
+  }
+
+  &:active,
+  &.active {
+    background: $primary_M_Blue;
+    border-color: $primary_M_Blue;
+  }
+
+  &[disabled] {
+    background: $primary_L_Blue;
+    border-color: $primary_L_Blue;
+    color: $D_Grey;
+    cursor: not-allowed;
+  }
+}
+
+.btn-success {
+  color: $White;
+  background: $success_M_Green;
+  border-color: $success_M_Green;
+
+  &:hover {
+    background: $success_Herbal;
+    border-color: $success_Herbal;
+  }
+
+  &:active,
+  &.active {
+    background: $success_M_Green;
+    border-color: $success_M_Green;
+  }
+
+  &[disabled] {
+    background: $success_L_Green;
+    border-color: $success_L_Green;
+    color: $D_Grey;
+    cursor: not-allowed;
+  }
+}
+
+.btn-warning {
+  color: $White;
+  background: $warning_D_Yellow;
+  border-color: $warning_D_Yellow;
+
+  &:hover {
+    background: $warning_Lemon;
+  }
+
+  &:active,
+  &.active {
+    background: $warning_M_Yellow;
+    border-color: $warning_M_Yellow;
+  }
+
+  &[disabled] {
+    background: $warning_Sand;
+    border-color: $warning_Sand;
+    cursor: not-allowed;
+  }
+}
+
+.btn-secondary {
+  color: $Black;
+  background: $L_Grey;
+  border-color: $L_Grey;
+
+  &:hover {
+    background: $Grey;
+  }
+
+  &:active,
+  &.active {
+    background: $D_Grey;
+    border-color: $D_Grey;
+  }
+
+  &[disabled] {
+    background: $Silver;
+    border-color: $Silver;
+    cursor: not-allowed;
+  }
+}
+
+.btn-danger {
+  color: $White;
+  background: $danger_D_Red;
+  border-color: $danger_D_Red;
+
+  &:hover {
+    background: $danger_Scarlet;
+  }
+
+  &:active,
+  &.active,
+  &.active {
+    background: $danger_M_Red;
+    border-color: $danger_M_Red;
+  }
+
+  &[disabled] {
+    background: $danger_Rubicund;
+    border-color: $danger_Rubicund;
+    color: $White;
+    cursor: not-allowed;
+  }
+}
+
+.btn-outline-danger {
+  color: $danger_D_Red;
+  background-color: transparent;
+  background-image: none;
+  border-color: $danger_D_Red;
+
+  &:hover {
+    color: $White;
+    background-color: $danger_Scarlet;
+    border-color: $danger_Scarlet;
+  }
+
+  &[disabled] {
+    color: $danger_Rubicund;
+    background-color: transparent;
+    border-color: $danger_Rubicund;
+    cursor: not-allowed;
+  }
+}
+
+.btn-outline-warning {
+  color: $warning_D_Yellow;
+  background-color: transparent;
+  background-image: none;
+  border-color: $warning_D_Yellow;
+
+  &:hover {
+    color: $White;
+    background-color: $warning_Lemon;
+    border-color: $warning_Lemon;
+  }
+
+  &[disabled] {
+    color: $warning_Sand;
+    background-color: transparent;
+    border-color: $warning_Sand;
+    cursor: not-allowed;
+  }
+}
+
+.btn-outline-success {
+  color: $success_Herbal;
+  background-color: transparent;
+  background-image: none;
+  border-color: $success_Herbal;
+
+  &:hover {
+    color: $White;
+    background-color: $success_M_Green;
+    border-color: $success_M_Green;
+  }
+
+  &[disabled] {
+    color: $success_Herbal;
+    background-color: transparent;
+    border-color: $success_Herbal;
+    cursor: not-allowed;
+  }
+}
+
+.btn-outline-primary {
+  color: $primary_D_Blue;
+  background-color: transparent;
+  background-image: none;
+  border-color: $primary_D_Blue;
+
+  &:hover {
+    color: $White;
+    background-color: $primary_Navy;
+    border-color: $primary_Navy;
+  }
+
+  &[disabled] {
+    color: $primary_Azure;
+    background-color: transparent;
+    border-color: $primary_Azure;
+    cursor: not-allowed;
+  }
+}
+
+.btn-outline-secondary {
+  color: $L_Grey;
+  background-color: transparent;
+  background-image: none;
+  border-color: $L_Grey;
+
+  &:hover {
+    color: $White;
+    background-color: $Grey;
+    border-color: $Grey;
+  }
+
+  &[disabled] {
+    color: $Silver;
+    background-color: transparent;
+    border-color: $Silver;
+    cursor: not-allowed;
+  }
+}
+
+.goDownload {
+
+  a {
+    background-color: $nordic-noir;
+    text-decoration: none;
+    color: $White;
+    font-weight: 600;
+    font-size: toRem(18);
+    line-height: toRem(33);
+    padding: 0.7rem;
+    border-radius: toRem(16);
+  }
+}
+
+.request-to-download {
+  background: $soya-bean;
+  color: $White;
+  padding: 1rem;
+  border-radius: toRem(16);
+  border: toRem(1) solid $soya-bean;
+  cursor: pointer;
+
+  &:hover {
+    background: $prairie-dust;
+  }
+
+  &[disabled] {
+    background: $prairie-dust;
+    cursor: not-allowed;
+  }
+}
+
+.search-btn {
+  color: $White;
+  background: $nordic-noir;
+  border-color: none;
+  padding: toRem(4) toRem(10);
+  border: 0;
+  height: toRem(28.8);
+  border-radius: toRem(16);
+
+  &:hover {
+    opacity: 0.9;
+    background: $nordic-noir;
+  }
+
+  &:active {
+    opacity: 1;
+    background: $nordic-noir;
+  }
+
+  &[disabled] {
+    opacity: 0.2;
+    background: $nordic-noir;
+  }
+}
+
+.btn-back-to-top {
+  display: inline-block;
+  width: toRem(50);
+  height: toRem(50);
+  text-align: center;
+  border: 1px solid $nordic-noir;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  z-index: 1000;
+  margin-bottom: toRem(41);
+
+  @include rtl {
+    right: unset;
+    left: 30px;
+  }
+
+  svg {
+    width: toRem(48);
+    height: toRem(48);
+    transform: rotate(180deg);
+
+    Path {
+      fill: none;
+      stroke: $nordic-noir;
+    }
+
+  }
+
+  &:hover {
+    cursor: pointer;
+    width: toRem(50);
+    height: toRem(160);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.25969rem;
+    border: toRem(0.429) solid $nordic-noir;
+    background: $l-d-yellow--50;
+
+    svg {
+      width: toRem(38);
+      height: toRem(38);
+    }
+
+    &::before {
+      content: "Back To Top";
+      writing-mode: vertical-lr;
+      text-orientation: sideways-right;
+      margin: auto;
+      color: $nordic-noir;
+      font-weight: 500;
+      font-style: normal;
+      margin-top: toRem(2);
+      transform: scale(-1, -1);
+
+      @include rtl {
+        content: "الي الاعلي";
+        font-weight: 600;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}
+
+.btn-back {
+  background-color: $nordic-noir;
+  color: $White;
+  border-color: $nordic-noir;
+  font-size: toRem(16);
+  padding: toRem(4) toRem(32);
+  cursor: pointer;
+}
+
+.reset-btn {
+  color: $White;
+  font-size: toRem(13.824);
+  font-style: normal;
+  font-weight: 400;
+  border-radius: toRem(16);
+  border: toRem(1) solid $orange;
+  background: $orange;
+  width: toRem(90);
+  height: toRem(28.8);
+  display: flex;
+  gap: toRem(8);
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+  svg{
+    width: toRem(16);
+    height: toRem(16);
+    Path{
+
+      stroke: $White;
+    }
+  }
+  &:hover{
+    background: $orange;
+    opacity: 0.8;
+  }
+
+}

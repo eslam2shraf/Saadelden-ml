@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "poppins";
+  src: local("poppins"),
+    url(@/assets/fonts/Poppins-Font/Poppins-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: local("poppins"),
+    url(@/assets/fonts/Poppins-Font/Poppins-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: local("poppins"),
+    url(@/assets/fonts/Poppins-Font/Poppins-Light.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: local("poppins"),
+    url(@/assets/fonts/Poppins-Font/Poppins-Medium.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: local("poppins"),
+    url(@/assets/fonts/Poppins-Font/Poppins-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+// arabic font
+@font-face {
+  font-family: "cairo";
+  src: local("cairo"),
+    url(@/assets/fonts/Cairo/Cairo-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: local("cairo"),
+    url(@/assets/fonts/Cairo/Cairo-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: local("cairo"),
+    url(@/assets/fonts/Cairo/Cairo-SemiBold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: local("cairo"),
+    url(@/assets/fonts/Cairo/Cairo-Light.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: local("cairo"),
+    url(@/assets/fonts/Cairo/Cairo-ExtraLight.ttf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  transition: all 0.5s ease;
+}
+
+* {
+  font-family: 'poppins';
+
+  @include rtl {
+    font-family: 'cairo';
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: toRem(2.3);
+}
+
+[lang=ar-AR] {
+  direction: rtl;
+  font-weight: 500;
+}
+/* width */
+::-webkit-scrollbar {
+  width: toRem(10);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 5px ;
+  background-color:#E9E3D5 ;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BAAD8F;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #b30000;
+// }
+// @media (min-width:$screen-sm){
+//   html{
+//     font-size: 20%;
+//   }
+// }
+// @media (min-width:$screen-md){
+//   html{
+//       font-size: 40%;
+//   }
+// }
+// @media (min-width:$screen-lg){
+//   html{
+//       font-size: 60%;
+//   }
+// }
+// @media (min-width:$screen-xl){
+//   html{
+//       font-size: 80%;
+//   }
+// }
+// @media (min-width:$screen-xxl){
+//   html{
+//       font-size: 100%;
+//   }
+// }

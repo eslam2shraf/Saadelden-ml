@@ -1,0 +1,94 @@
+.product-list {
+  width: toRem(250);
+  border-radius: toRem(16);
+  height: toRem(150);
+
+  &__img {
+    width: toRem(320);
+    border-radius: toRem(16) toRem(16) toRem(0) toRem(0);
+  }
+  .card-body {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: toRem(8);
+    p {
+      height: 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .key {
+        font-size: toRem(14);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .value {
+        font-size: toRem(12);
+        font-weight: 400;
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+.product-list_link {
+  font-weight: 300;
+  font-size: toRem(12);
+  line-height: toRem(16);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: toRem(8);
+  color: $Black;
+  text-decoration: none;
+  position: absolute;
+  bottom: 7%;
+  left: 40%;
+
+  @include rtl {
+    right: 4%;
+    left: unset;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    width: toRem(16);
+    height: tRem(16);
+  }
+}
+
+.productDesc {
+  display: block;
+  max-width: 100%;
+  height: toRem(43);
+  font-size: toRem(14);
+  line-height: 1;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.seemoreEllipsis {
+  width: -webkit-fill-available;
+  margin-top: 1.7rem !important;
+  margin-left: 0.3rem;
+}
+
+@media (max-width: $screen-sm) {
+  .product-list {
+    width: 100%;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .product-list_link {
+    left: 47%;
+  }
+}

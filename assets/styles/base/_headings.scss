@@ -1,0 +1,199 @@
+.h1,
+h1 {
+  font-size: toRem($Headline_1);
+  line-height: toRem($Headline_1_Lh);
+}
+
+.h2,
+h2 {
+  font-size: toRem($Headline_2);
+  line-height: toRem($Headline_2_Lh);
+}
+
+.h3,
+h3 {
+  font-size: toRem($Headline_3);
+  line-height: toRem($Headline_3_Lh);
+}
+
+.h4,
+h4 {
+  font-size: toRem($Headline_4);
+  line-height: toRem($Headline_4_Lh);
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+h5,
+h6 {
+  font-weight: $headings_Fw;
+}
+
+.body_1 {
+  font-size: toRem($p1);
+  line-height: toRem($p1_Lh);
+}
+
+.body_2 {
+  font-size: toRem($p2);
+  line-height: toRem($p2_Lh);
+}
+
+.body_3 {
+  font-size: toRem($p3);
+  line-height: toRem($p3_Lh);
+}
+
+//Text alignment
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+//Font weight and italics
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight--500 {
+  font-weight: 500 !important;
+}
+.font-weight--600 {
+  font-weight: 600 !important;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+//abbr 
+abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}
+
+.title--lg {
+  font-size: toRem(24);
+}
+
+.font-size--sm {
+  font-size: toRem(16);
+}
+
+.text_decoration--none {
+  text-decoration: none;
+}
+
+.captalize {
+  text-transform: capitalize;
+}
+
+.chart-title {
+  position: absolute;
+  top: -2rem;
+  left: 2.6rem;
+  font-size: toRem(14);
+  font-weight: 600;
+  color: $grey;
+}
+
+.chart-title--down {
+  position: absolute;
+  top: 28.6rem;
+  left: 2.6rem;
+  font-size: toRem(14);
+  font-weight: 600;
+  color: $grey;
+}
+
+.left-1 {
+  left: 1rem !important;
+}
+
+.left-2 {
+  left: 2.6rem !important;
+}
+
+.left-15 {
+  left: 15.6rem !important;
+}
+
+.left-11 {
+  left: 11.6rem !important;
+}
+
+@media (max-width: $between-md-lg) {
+  .left-15 {
+    left: unset !important;
+  }
+
+  .left-11 {
+    left: unset !important;
+  }
+
+  .chart-title {
+    top: 4.2rem;
+    left: 1.4rem !important;
+    font-size: toRem(12);
+  }
+
+}
+
+@media (max-width: $screen-sm) {
+  .chart-title {
+    top: 6rem;
+  }
+}
+ .font--10{
+  font-size: toRem(10);
+ }

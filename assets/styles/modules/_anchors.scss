@@ -1,0 +1,39 @@
+.show_more_link{
+    font-weight: 700;
+    font-size: toRem(15);
+    line-height: toRem(16);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $Black;
+    text-decoration: none;
+    position: absolute;
+    bottom: 7%;
+    left: 60%;
+  
+    @include rtl {
+      right: 60%;
+      left: unset;
+      svg{
+        transform: rotate(180deg);
+      }
+    }
+  
+    &:hover {
+      svg{
+        transform: translateX(5px);;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+}
+
+@media screen and (max-width: $screen-lg) {
+  .show_more_link{
+    left: 49%;
+    @include rtl {
+      right: 49%;
+      left: unset;
+    }
+  }
+ 
+}

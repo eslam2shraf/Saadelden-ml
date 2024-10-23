@@ -1,0 +1,44 @@
+.chart-md {
+  div:first-child {
+    canvas {
+      height: toRem(300) !important;
+    }
+
+  }
+
+}
+
+.chart-sm {
+  div:first-child {
+    canvas {
+      height: toRem(152) !important;
+      width: toRem(152) !important;
+      margin: auto;
+    }
+
+  }
+}
+
+.chart-lg {
+  div:first-child {
+    canvas {
+      height: toRem(230) !important;
+      width: toRem(633) !important;
+    }
+  }
+}
+
+.chart-xl {
+  div:first-child {
+    canvas {
+      height: toRem(350) !important;
+      width: toRem(350) !important;
+    }
+  }
+}
+
+.chart-between {
+  height: toRem(268);
+  width: toRem(268);
+  margin: auto;
+}

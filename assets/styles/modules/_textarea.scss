@@ -1,0 +1,39 @@
+.textarea {
+  position: relative;
+  background: $primary_L_Blue;
+  outline: none;
+  border-radius: toRem(8);
+  font-weight: toRem($body_Fw);
+  font-size: toRem($field_1);
+  line-height: toRem($field_1_Lh);
+  width: toRem(288);
+  height: toRem(120);
+  padding: toRem(15);
+  text-indent: toRem(5);
+
+  border: toRem(1) solid $primary_L_Blue;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary_L_Blue;
+    border: toRem(1) solid $primary_D_Blue;
+  }
+
+  &:focus {
+    cursor: text;
+    background: $White;
+    border: toRem(1) solid $primary_D_Blue;
+  }
+
+}
+
+.char-limit {
+  font-style: normal;
+  font-weight: toRem($body_Fw);
+  font-size: toRem($field_2);
+  line-height: toRem($field_2_Lh);
+  text-align: right;
+  color: $L_Grey;
+  display: flex;
+  justify-content: flex-start;
+}

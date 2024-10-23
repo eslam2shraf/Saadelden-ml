@@ -1,0 +1,217 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("assets/images/bg_auth.svg");
+  min-height: 92.9vh;
+
+  &__logo {
+    width: toRem(253);
+    height: toRem(140);
+    margin-bottom: toRem(20);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: toRem(40);
+    line-height: toRem(55);
+    text-align: center;
+    color: $White;
+  }
+
+  &__card {
+    width: toRem(492);
+    min-height: toRem(547);
+    background: linear-gradient(
+      180deg,
+      rgba(21, 32, 45, 0.65) 25.31%,
+      rgba(76, 109, 148, 0.559) 100%
+    );
+    box-shadow: toRem(0) toRem(0) toRem(27) rgba(248, 253, 255, 0.5);
+    border-radius: toRem(16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-weight: 600;
+      font-size: toRem(32);
+      line-height: toRem(55);
+      color: $White;
+      font-style: normal;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(42);
+
+      &__inpt {
+        .input__field {
+          color: $White;
+          background-color: transparent;
+          border: none;
+          border-bottom: toRem(1) solid $White;
+          border-radius: 0;
+          width: toRem(353);
+          height: toRem(49);
+        }
+
+        .erormsg {
+          margin-top: toRem(20);
+          margin-bottom: 0;
+          @extend .error_msg;
+        }
+
+        .input__label {
+          display: inline-block;
+          font-weight: 400;
+          font-size: toRem(20);
+          line-height: toRem(24);
+
+          &::before {
+            font-weight: 400;
+            font-size: toRem(20) !important;
+            line-height: toRem(24) !important;
+            top: -1rem !important;
+            left: 0rem !important;
+
+            @include rtl {
+              left: unset !important;
+              right: 0rem !important;
+            }
+
+            color: $White !important;
+          }
+        }
+
+        .input__icon {
+          left: toRem(321);
+
+          @include rtl {
+            left: unset;
+            right: toRem(321);
+          }
+
+          top: toRem(12);
+          width: toRem(24);
+          height: toRem(24);
+          transition: 0.3s;
+        }
+      }
+
+      &__btn {
+        background: $orochimaru;
+        border-radius: toRem(16);
+        border: none;
+        font-weight: 700;
+        font-size: toRem(20);
+        line-height: toRem(27);
+        color: $Black;
+      }
+    }
+    &__errMsg {
+      top: 81%;
+      left: 26%;
+      width: 45%;
+    }
+  }
+
+  &__lang {
+    position: absolute;
+    left: toRem(91);
+    top: toRem(30);
+    list-style-type: none;
+
+    li {
+      &:hover > ul {
+        display: block;
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: toRem(17);
+      color: $White;
+      gap: toRem(6);
+      text-decoration: none;
+
+      svg {
+        width: toRem(18);
+        height: toRem(18);
+
+        Path {
+          stroke: $White;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $between-sm-md) {
+  .Login {
+    &__logo {
+      width: toRem(200);
+      height: toRem(70);
+    }
+
+    &__title {
+      font-size: toRem(30);
+    }
+
+    &__card {
+      width: 100%;
+
+      &__form {
+        &__inpt {
+          .input__field {
+            width: 100%;
+          }
+
+          .input__label {
+          }
+
+          .input__icon {
+            left: 85%;
+
+            @include rtl {
+              left: unset;
+              right: 85%;
+            }
+          }
+        }
+      }
+    }
+
+    &__lang {
+      left: toRem(37);
+      top: toRem(53);
+
+      a {
+        span {
+          svg {
+            width: toRem(24);
+            height: toRem(24);
+          }
+        }
+      }
+    }
+  }
+}
+
+.input_error {
+  input {
+    border-color: $danger_Scarlet;
+  }
+}
+
+.error_msg {
+  color: $danger_Scarlet;
+  font-size: toRem(16);
+}

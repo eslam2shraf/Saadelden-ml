@@ -1,0 +1,153 @@
+// (Lh -> Line height )
+//(Fw -> font-weight)
+//Pixel unit
+//Headings
+$Headline_1: 64;
+$Headline_1_Lh: 76;
+$Headline_2: 36;
+$Headline_2_Lh: 44;
+$Headline_3: 28;
+$Headline_3_Lh: 36;
+$Headline_4: 20;
+$Headline_4_Lh: 28;
+$headings_Fw: 600;
+
+$headings-size-lineheight: (
+  64: 76,
+  36: 44,
+  28: 36,
+  20: 28,
+);
+
+//Paragrphs
+$p1: 18;
+$p1_Lh: 28;
+$p2: 16;
+$p2_Lh: 24;
+$p3: 24;
+$p3_Lh: 20;
+
+//Buttons & Links
+$btn_lg: 18;
+$btn_lg_Lh: 24;
+$btn_med: 16;
+$btn_med_Lh: 20;
+$btn_sm: 14;
+$btn_sm_Lh: 16;
+$btn_xsm: 12;
+$btn_xsm_Lh: 12;
+
+//fields
+$field_1: 16;
+$field_1_Lh: 24;
+$field_2: 12;
+$field_2_Lh: 16;
+
+$body_Fw: 400;
+
+$spacer: 8;
+
+//Grid
+$grid_margin: 150;
+$gutter: 18;
+$grid_cols: 12;
+
+//Displays & flex
+$displays: flex, block, inline-block, inline, grid, table, inline-flex, none;
+$flex-direction: row, row-reverse, column, column-reverse;
+$flex-justify-alignment: flex-start, flex-end, center, space-between,
+  space-around;
+$flex-align-alignment: flex-start, flex-end, center, baseline, stretch;
+$flex-align-content: flex-start, flex-end, center, space-around, stretch;
+$borders-dir: top, right, left, bottom, all;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+// breakpoints
+$screen-xs: 0;
+$screen-sm: 576px;
+$between-sm-md: 767px;
+$screen-md: 768px;
+$between-md-lg: 800px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+$screen-xxxl: 1440px;
+
+$breakpoints: (
+  xs: $screen-xs,
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl,
+  xxl: $screen-xxl,
+);
+
+//Neutral
+$Black: #212121;
+$neutral-black: #000;
+$Black--35: rgba(0, 0, 0, 0.35);
+$Black--50: rgba(0, 0, 0, 0.5);
+$D_Grey: #4d4d4d;
+$Grey: #717171;
+$L_Grey: #89939e;
+$Grey-blue: #abbed1;
+$Silver: #f5f7fa;
+$White: #ffffff;
+//Primary Colors
+$primary_D_Blue: #0053ad;
+$primary_Navy: #0663c7;
+$primary_M_Blue: #0671e0;
+$primary_Azure: #4196f0;
+$primary_Sky: #dbedff;
+$primary_L_Blue: #eef5fc;
+
+//success Colors
+$success_D_Green: #115b43;
+$success_Forest: #1b6e53;
+$success_M_Green: #009262;
+$success_Herbal: #32c997;
+$success_Mint: #84dfc1;
+$success_L_Green: #f1fbf8;
+//warning Colors
+$warning_D_Yellow: #e48900;
+$warning_Lemon: #ffa826;
+$warning_M_Yellow: #ffb240;
+$warning_Straw: #ffc670;
+$warning_Sand: #ffd596;
+$warning_L_Yellow: #fff8ec;
+$Gold: #d961d4;
+//danger Colors
+$danger_D_Red: #c33025;
+$danger_Scarlet: #e01507;
+$danger_M_Red: #e02b1d;
+$danger_Raspberry: #ff5a4f;
+$danger_Rubicund: #f0857d;
+$danger_L_Red: #fff1f0;
+
+$l-d-yellow: rgba(252, 221, 236, 0.7);
+$l-d-yellow--50: rgba(252, 221, 236, 0.3);
+$l-d-yellow--70: rgba(252, 221, 236, 0.5);
+$l-d-yellow--30: rgba(252, 221, 236, 0.7);
+$nordic-noir: rgba(37, 70, 66, 1); //sideMenu
+$nordic-noir-50: rgba(37, 70, 66, 1);
+$midwinter-mist: rgba(165, 212, 220, 0.7);
+$soya-bean: #70654c;
+$orange: #fcddec;
+$prairie-dust: rgba(223, 180, 193, 1);
+$orochimaru: #d9d9d9;
+$grey: #717579;
+$disabled: #929197;
+$disabled--50: rgba(146, 145, 151, 0.5);
+$the-ego-has-landes: rgba(255, 206, 198, 1);
+$sea-mariner: #434855;
+
+$status-green: #298532;
+$status-red: #b21c1c;
+$status-orange: #c44e0c;

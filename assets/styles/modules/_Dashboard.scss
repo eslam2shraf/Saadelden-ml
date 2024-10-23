@@ -1,0 +1,68 @@
+.hovered_card {
+  background-color: $l-d-yellow--50;
+
+  &:hover {
+    background-color: $l-d-yellow;
+
+    .title {
+      transform: translateY(toRem(-10));
+      margin-bottom: 0;
+    }
+
+    .title_bottom {
+      display: block;
+      background-color: $orange;
+      border: none;
+      height: toRem(1);
+      width: 27%;
+      margin-left: toRem(22);
+      margin-top: 0;
+
+      @include rtl {
+        margin-right: toRem(6);
+        margin-left: 0;
+        width: 16%;
+      }
+    }
+  }
+
+}
+
+.title_bottom,
+.title_bottom-68 {
+  display: none;
+}
+
+.title_bottom-68 {
+  width: 68% !important;
+
+  @include rtl {
+    width: 28% !important;
+  }
+}
+
+.title_bottom-63 {
+  width: 63% !important;
+
+  @include rtl {
+    width: 32% !important;
+  }
+}
+
+.title_bottom-22 {
+  width: 22% !important;
+
+  @include rtl {
+    width: 12% !important;
+  }
+}
+
+.title_bottom-8 {
+  width: 8% !important;
+}
+
+.title-bottom-rtl {
+  @include rtl {
+    width: 8% !important;
+  }
+}

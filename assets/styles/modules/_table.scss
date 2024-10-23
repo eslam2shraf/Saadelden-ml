@@ -1,0 +1,159 @@
+table {
+  border: toRem(1) solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: toRem(0) toRem(5) $l-d-yellow;
+  border-radius: 0.5rem;
+  caption {
+    font-size: toRem(24);
+    margin: toRem(8) 0 toRem(12);
+  }
+
+  thead {
+    border-bottom: toRem(7) solid $l-d-yellow;
+
+    th {
+      padding: toRem(8) toRem(14);
+      text-align: center;
+      font-size: toRem(12);
+      letter-spacing: toRem(1);
+      text-transform: uppercase;
+      background-color: $prairie-dust;
+      color: $White;
+    }
+  }
+
+  tbody {
+    tr {
+      width: toRem(316.35);
+      height: toRem(44.11);
+      background-color: $White;
+      border-bottom: toRem(6) solid $l-d-yellow;
+      font-size: toRem(15);
+
+      td {
+        font-size: toRem(16.7302);
+        line-height: toRem(23);
+        text-align: center;
+        word-break: break-word;
+
+      }
+    }
+  }
+}
+
+.table_radius_bottom {
+  border-bottom-left-radius: toRem(8);
+  border-bottom-right-radius: toRem(8);
+}
+
+.table_subtitle {
+  font-weight: 600;
+  font-size: toRem(7.60465);
+  line-height: toRem(10);
+  margin-top: toRem(1);
+}
+.table{
+  &__actions{
+    &__read_more{
+      background-color: $nordic-noir;
+      display: inline-block;
+      width: toRem(30);
+      height: toRem(30);
+      text-align: center;
+      border: 1px solid  $nordic-noir;
+      border-radius: 50%;
+      margin: auto;
+       svg{
+        width: toRem(28);
+        height: toRem(28);
+        @include rtl {
+          transform: rotate(180deg);
+        }
+        Path {
+          fill: none;
+          stroke: $White;
+        }
+
+       }
+
+      &:hover {
+        cursor: pointer;
+        width: 6.8125rem;
+        height: 1.9375rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 2.25969rem;
+        border: toRem(0.429) solid  $nordic-noir;
+        color: $White;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        &::before {
+          content: "Read more";
+          margin-left: toRem(10);
+          @include rtl {
+            content: "المزيد";
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-sm) {
+  .responsive_table {
+    margin: auto;
+    overflow-x: auto;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  table {
+    thead {
+      th {
+        word-break: break-word
+      }
+    }
+  }
+}
+
+.excel__container {
+  min-height: auto;
+
+  tr {
+    height: toRem(85)
+  }
+}
+
+.word-break {
+  word-break: break-all
+}
+
+.word-break-word {
+  word-break: break-word
+}
+
+.download-link {
+  &:hover {
+    color: $success_M_Green;
+  }
+}
+
+
+.hovered-table {
+  tr:hover {
+    color: $midwinter-mist;
+    cursor: pointer;
+  }
+}

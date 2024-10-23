@@ -1,0 +1,106 @@
+.box {
+  background-color: $Silver;
+  border-radius: toRem(12);
+  padding: toRem(40);
+  min-height: toRem(423.07);
+}
+
+.box-lg {
+  background-color: $Grey;
+  border-radius: toRem(12);
+  padding: toRem(20);
+  min-height: toRem(961);
+}
+
+.w-100 {
+  width: 100% !important;
+}
+.w-80 {
+  width: 80%;
+}
+.w-76 {
+  width: 76%;
+}
+.w-73 {
+  width: 73%;
+}
+.w-49 {
+  width: 49%;
+}
+.w-66 {
+  width: 66%;
+}
+
+.min-height--46 {
+  min-height: 46.8rem;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.min-h--20 {
+  min-height: 20rem;
+}
+
+.min-h--auto {
+  min-height: auto !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (max-width: $screen-lg) {
+  .w-md-45 {
+    width: 45%;
+  }
+
+  .min-height--lg {
+    min-height: 60rem;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .w-md-45 {
+    width: unset !important;
+  }
+
+  .min-h--20 {
+    min-height: unset;
+  }
+}
+
+.product_icon {
+  Path {
+    stroke: $Black;
+  }
+}
+.position--relative {
+  position: relative;
+}
+.unit {
+  font-size: toRem(11.369);
+  font-style: normal;
+  font-weight: 500;
+}
+.error-msg {
+  width: 30%;
+  padding: toRem(8);
+  height: auto;
+  background-color: $the-ego-has-landes;
+  color: $sea-mariner;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(8);
+  border-radius: toRem(16);
+  font-size: toRem(12);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 110%;
+  left: 55%;
+  z-index: 1;
+}

@@ -1,0 +1,531 @@
+.ai-power-seller {
+  background-color: $l-d-yellow--30;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  padding: toRem(32);
+  border: toRem(1) solid $Gold;
+  position: relative;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-size: toRem(32);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__result {
+      display: flex;
+      gap: toRem(32);
+      align-items: center;
+
+      p {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(8);
+        margin: 0;
+      }
+
+      &__title {
+        font-size: toRem(20);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &__value {
+        font-size: toRem(16);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+        justify-content: flex-end;
+        gap: toRem(40);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: toRem(24);
+
+    &__index {
+      height: toRem(89);
+      font-family: Rampart One;
+      font-size: toRem(64);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-right: toRem(2) solid $disabled--50;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(16);
+
+      p {
+        margin: 0;
+        font-size: toRem(16);
+        font-style: normal;
+        line-height: normal;
+        display: flex;
+        gap: toRem(24);
+      }
+
+      &__key {
+        width: toRem(160);
+        font-weight: 700;
+        word-wrap: break-word;
+      }
+
+      &__value {
+        font-weight: 500;
+        display: flex;
+        gap: toRem(33);
+        &__status {
+          font-size: toRem(20);
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: toRem(16);
+        }
+      }
+    }
+
+    &__target {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(32);
+      justify-content: center;
+      width: 15%;
+      p {
+        margin: 0;
+        display: flex;
+        gap: toRem(8);
+        align-items: center;
+
+        span {
+          display: flex;
+          flex-direction: column;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+          span {
+            font-size: toRem(20);
+
+            &:nth-child(2) {
+              font-size: toRem(24);
+            }
+          }
+        }
+      }
+
+      &__desc {
+        font-size: toRem(15);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: toRem(202);
+      }
+    }
+  }
+
+  &__transactions {
+    display: flex;
+
+    &__categoriescharts {
+      &__desc {
+        font-size: toRem(10);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        width: toRem(316);
+      }
+      .categories-values {
+        font-size: toRem(10);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      div {
+        canvas {
+          width: toRem(355) !important;
+          height: toRem(255) !important;
+        }
+      }
+    }
+
+    &__values {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(16);
+
+      .transactions-nums {
+        margin: 0;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: toRem(8);
+
+        span {
+          &:first-child {
+            font-size: toRem(16);
+          }
+
+          &:nth-child(2) {
+            font-size: toRem(20);
+          }
+        }
+      }
+
+      .transactions-rate-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(5);
+
+        &__rate {
+          display: flex;
+          justify-content: space-between;
+
+          span {
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            &:first-child {
+              font-size: toRem(16);
+            }
+
+            &:nth-child(2) {
+              font-size: toRem(20);
+            }
+          }
+        }
+
+        &__desc {
+          font-size: toRem(10);
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          color: $Grey;
+        }
+      }
+
+      .transactions-status {
+        display: flex;
+        gap: toRem(24);
+
+        p {
+          display: flex;
+          flex-direction: column;
+
+          margin: 0;
+        }
+
+        &__values {
+          font-size: toRem(24);
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          gap: toRem(14);
+        }
+
+        &__colors {
+          gap: toRem(21);
+          font-size: toRem(20);
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  &__next,
+  &__prev {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    top: 49%;
+  }
+  &__next {
+    left: 96%;
+  }
+  &__prev {
+    transform: rotate(180deg);
+    right: 96%;
+  }
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(#baa34f, #897018);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: $between-md-lg) {
+  .ai-power-seller {
+    width: 95%;
+    margin: auto;
+    &__head {
+      flex-wrap: wrap;
+      &__result {
+        flex-direction: row-reverse;
+        gap: toRem(7);
+        &__title {
+          font-size: toRem(10);
+        }
+        &__value {
+          font-size: toRem(10);
+          gap: toRem(45);
+        }
+      }
+    }
+    &__content {
+      flex-wrap: wrap;
+      &__hr {
+        width: 100%;
+      }
+      &__details {
+        p {
+          font-size: toRem(12);
+          gap: toRem(53);
+        }
+        &__key {
+          width: toRem(133);
+        }
+        &__value {
+          gap: toRem(16.5);
+          &__status {
+            svg {
+              width: toRem(7.097);
+              height: toRem(6.387);
+            }
+            font-size: toRem(6.104);
+            gap: toRem(1.42);
+          }
+        }
+      }
+      &__target {
+        flex-direction: row;
+        gap: toRem(7.27);
+        justify-content: space-evenly;
+        width: 100%;
+        p {
+          gap: toRem(3.86);
+
+          span {
+            span:first-child {
+              font-size: toRem(10);
+            }
+
+            span:nth-child(2) {
+              font-size: toRem(10);
+            }
+          }
+        }
+      }
+    }
+    &__transactions {
+      flex-wrap: wrap;
+      justify-content: center;
+      &__hr {
+        width: 100%;
+      }
+      &__values {
+        width: 70%;
+        .transactions-nums {
+          span {
+            &:first-child {
+              font-size: toRem(14);
+            }
+
+            &:nth-child(2) {
+              font-size: toRem(14);
+            }
+          }
+        }
+        .transactions-rate-wrapper {
+          gap: toRem(2);
+
+          &__rate {
+            span {
+              &:first-child {
+                font-size: toRem(14);
+              }
+
+              &:nth-child(2) {
+                font-size: toRem(14);
+              }
+            }
+          }
+          &__desc {
+            font-size: toRem(10);
+
+            width: toRem(225);
+          }
+        }
+        .transactions-status {
+          gap: toRem(74);
+
+          &__values {
+            font-size: toRem(16);
+          }
+
+          &__colors {
+            gap: toRem(14);
+            font-size: toRem(16);
+          }
+        }
+      }
+    }
+    &__next {
+      left: 93%;
+    }
+    &__prev {
+      right: 93%;
+    }
+  }
+}
+
+@media (max-width: $screen-xl) and (min-width: 801px) {
+  .ai-power-seller {
+    width: 98%;
+    margin: auto;
+    &__head {
+      &__result {
+        gap: toRem(8);
+        &__title {
+          font-size: toRem(16);
+        }
+        &__value {
+          font-size: toRem(14);
+          gap: toRem(40);
+        }
+      }
+    }
+    &__content {
+      &__details {
+        p {
+          font-size: toRem(14);
+          gap: toRem(64);
+        }
+        &__key {
+          width: toRem(133);
+        }
+        &__value {
+          gap: toRem(8);
+          &__status {
+            svg {
+              width: toRem(16);
+              height: toRem(16);
+            }
+            font-size: toRem(14);
+            gap: toRem(7);
+          }
+        }
+      }
+      &__target {
+        gap: toRem(22.96);
+
+        p {
+          gap: toRem(5.74);
+
+          span {
+            span:first-child {
+              font-size: toRem(14.351);
+            }
+
+            span:nth-child(2) {
+              font-size: toRem(17.221);
+            }
+          }
+        }
+      }
+    }
+    &__transactions {
+      justify-content: space-evenly;
+      &__categoriescharts {
+        width: 33%;
+        div {
+          canvas {
+            width: 100% !important;
+            height: toRem(255) !important;
+          }
+        }
+        &__desc {
+          font-size: toRem(10);
+          width: toRem(247);
+          color: #000;
+        }
+      }
+      &__values {
+        width: 27%;
+        .transactions-nums {
+          span {
+            &:first-child {
+              font-size: toRem(12.524);
+            }
+
+            &:nth-child(2) {
+              font-size: toRem(15.655);
+            }
+          }
+        }
+        .transactions-rate-wrapper {
+          gap: toRem(3.57);
+
+          &__rate {
+            span {
+              &:first-child {
+                font-size: toRem(12.524);
+              }
+
+              &:nth-child(2) {
+                font-size: toRem(15.655);
+              }
+            }
+          }
+          &__desc {
+            font-size: toRem(7.827);
+
+            width: toRem(176);
+          }
+        }
+        .transactions-status {
+          gap: toRem(37);
+
+          &__values {
+            gap: toRem(16);
+            font-size: toRem(18.786);
+          }
+
+          &__colors {
+            gap: toRem(22);
+            font-size: toRem(15.655);
+          }
+        }
+      }
+    }
+    &__next {
+      left: 93%;
+    }
+    &__prev {
+      right: 93%;
+    }
+  }
+}
+

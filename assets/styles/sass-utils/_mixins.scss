@@ -1,0 +1,192 @@
+  //displays mixin
+  @mixin displays {
+    @each $display in $displays {
+      .d-#{$display} {
+        display: #{$display} !important;
+      }
+    }
+  }
+
+  //flex
+  @mixin flex-direction {
+    @each $direction in $flex-direction {
+      .flex-#{$direction} {
+        flex-direction: #{$direction};
+      }
+    }
+  }
+
+  @mixin flex-justify-alignment {
+    @each $alignment in $flex-justify-alignment {
+      .justify-content-#{$alignment} {
+        justify-content: #{$alignment};
+      }
+    }
+  }
+
+  @mixin flex-align-alignment {
+    @each $alignment in $flex-align-alignment {
+      .align-items-#{$alignment} {
+        align-items: #{$alignment};
+      }
+
+      .align-self-#{$alignment} {
+        align-self: #{$alignment};
+      }
+    }
+  }
+
+  @mixin flex-align-content {
+    @each $alignment in $flex-align-content {
+      .align-content-#{$alignment} {
+        align-content: #{$alignment};
+      }
+    }
+  }
+
+  @mixin flex-order {
+    @for $i from 1 through $grid_cols {
+      .order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+
+  @mixin borders {
+    @each $dir in $borders-dir {
+      @if $dir=='all' {
+        .border {
+          border: toRem(1) solid $Silver;
+        }
+      }
+
+      .border-#{$dir} {
+        border-#{$dir}: toRem(1) solid $Silver;
+      }
+
+    }
+
+    @each $dir in $borders-dir {
+      .border-#{$dir}-0 {
+        border-#{$dir}: 0;
+      }
+
+      @if $dir=='all' {
+        .border-0 {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  @mixin border_Radius {
+    @for $i from 1 through 10 {
+      .b-#{$i} {
+        border-radius: toRem($spacer * $i) !important;
+      }
+    }
+
+  }
+
+  //padding , margin
+  @mixin Spacing {
+
+    @each $abbr,
+    $name in ("t": "top", "r": "right", "b": "bottom", "l": "left", "all":'all', 'auto':'auto') {
+      @for $i from 0 through 15 {
+        @if $abbr=='all' {
+          .m-#{$i} {
+            margin: toRem($spacer * $i) !important;
+          }
+
+          .p-#{$i} {
+            padding: toRem($spacer * $i) !important;
+          }
+        }
+
+        @if $abbr=='auto' {
+          .m-#{$abbr} {
+            margin: auto !important;
+          }
+
+          .p-#{$abbr} {
+            padding: auto !important;
+          }
+        }
+
+        .m#{$abbr}-#{$i} {
+          margin-#{$name}: toRem($spacer * $i) !important;
+        }
+
+        .p#{$abbr}-#{$i} {
+          padding-#{$name}: toRem($spacer * $i) !important;
+        }
+      }
+    }
+  }
+
+  //breakPoints mixins
+  @mixin breakpoint-min($width) {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+
+  @mixin breakpoint-max($width) {
+    @media (max-width: $width) {
+      @content;
+    }
+  }
+
+  //Grid mixins
+
+  @mixin grid-cols($device) {
+
+    .col#{grid-class-name-generic($device)} {
+      flex: 1;
+    }
+
+    @for $i from 1 through $grid_cols {
+      .col#{grid-class-name($device, $i)} {
+        width: percentage($i / $grid_cols);
+      }
+    }
+
+  }
+
+  @mixin make-container {
+    padding-right: toRem($gutter * .5);
+    padding-left: toRem($gutter * .5);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @mixin responsiveContainer() {
+
+    @each $size,
+    $width in $container-max-widths {
+
+      @each $sizename,
+      $widthvalue in $breakpoints {
+        @if $size==$sizename {
+          @media (min-width:$widthvalue) {
+            .container {
+              max-width: $width;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  @mixin rtl() {
+    @at-root [lang=ar-AR] & {
+      @content;
+    }
+
+    @at-root &[lang=ar-AR] {
+      @content;
+    }
+  }

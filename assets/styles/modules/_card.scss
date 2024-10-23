@@ -1,0 +1,266 @@
+.card {
+  border-radius: toRem(8);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card-header {
+  margin-top: 0;
+  padding: toRem(14);
+  border-top-right-radius: toRem(8);
+  border-top-left-radius: toRem(8);
+  font-size: toRem(22.4605);
+  letter-spacing: toRem(1.2);
+}
+
+.card-title {
+  font-size: toRem(17);
+  text-transform: capitalize;
+}
+
+.card-subtitle {
+  font-size: toRem(16);
+  color: $Black;
+  opacity: 0.5;
+  line-height: toRem(17);
+}
+
+.card-body {
+  letter-spacing: toRem(0.5);
+}
+
+.card-sm {
+  width: toRem(437);
+}
+
+.card-md {
+  width: toRem(553);
+  min-height: 27rem;
+}
+
+.card-xl {
+  width: toRem(890);
+  min-height: toRem(423.07);
+}
+
+.card-lg {
+  width: toRem(665);
+  min-height: toRem(305);
+}
+
+.card-xs {
+  width: toRem(325.48);
+  height: 27rem;
+}
+
+.card-xxs {
+  width: toRem(299.64);
+  min-height: toRem(225.46);
+}
+
+.card-tiny {
+  width: toRem(276);
+  min-height: toRem(171);
+}
+
+.card-825 {
+  width: toRem(825);
+}
+.card-874 {
+  width: toRem(874);
+}
+.card-424 {
+  width: toRem(424);
+}
+
+.card-497 {
+  width: toRem(497);
+}
+.card-424 {
+  width: toRem(424);
+}
+
+.card-372 {
+  width: toRem(372);
+}
+.card-399 {
+  width: toRem(399);
+}
+.card-232 {
+  width: toRem(232);
+}
+.card-215 {
+  width: toRem(215);
+}
+
+.tooltip_card {
+  width: toRem(246.98);
+  height: toRem(127.31);
+}
+
+.AnomalieChart-card {
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Anomalie_chart {
+  .chartjs-render-monitor {
+    height: toRem(289) !important;
+    width: toRem(319) !important;
+    margin-left: 13%;
+  }
+}
+.customer_card{
+  width: 24.6rem;
+}
+@media (min-width: $screen-lg) and (max-width: $screen-xxl) {
+  .card-lg {
+    width: 37rem;
+  }
+
+  .card-xl {
+    width: 53.625rem;
+  }
+
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+
+  .card-md {
+    width: 32.5625rem;
+  }
+
+  .card-xl {
+    width: 50.625rem;
+  }
+
+  .card-tiny {
+    width: 16.25rem;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+}
+
+@media screen and (max-width: $screen-xxxl) {
+  .card-sm {
+    width: 16.3125rem;
+  }
+
+  .tooltip_card {
+    width: 12.43625rem;
+  }
+
+  .card-825 {
+    width: 35.5625rem;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .order-2 {
+    order: 2;
+  }
+
+}
+
+@media (max-width: $screen-md) {
+  .order-2 {
+    order: 2;
+  }
+
+  .card-xs {
+    width: 100% !important;
+  }
+  .customer_card{
+    width: 100% !important;
+  }
+
+}
+
+@media (max-width: $screen-lg) {
+  .order-2 {
+    order: 2;
+  }
+
+  .card-xxs {
+    width: 17.7275rem;
+  }
+
+  .card-lg-xxs {
+    width: 83%;
+  }
+
+  .card-xs {
+    width: toRem(225);
+    height: auto;
+  }
+
+  .card-372 {
+    width: 83%;
+  }
+
+  .card-sm-80 {
+    width: 80% !important;
+
+    .card-header {
+      img {
+        width: 100% !important;
+        height: 18rem;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $screen-sm) {
+
+  .card,
+  .card-sm,
+  .card-xs,
+  .card-lg,
+  .card-xxs,
+  .card-tiny,
+  .card-md,
+  .card-825 .card-497,
+  .card-372 {
+    height: auto;
+    width: 100%;
+    min-height: auto
+  }
+
+  .card-title {
+    line-height: unset;
+  }
+
+  .card-body {
+    letter-spacing: toRem(0.2);
+  }
+
+  .order-2 {
+    order: 2;
+  }
+}
+
+.segmentas:nth-child(1) {
+  background-color: $orange;
+}
+
+.segmentas:nth-child(2) {
+  background-color: $prairie-dust;
+}
+
+.segmentas:nth-child(3) {
+  background-color: $l-d-yellow;
+}
+
+.segmentas:nth-child(4) {
+  background-color: $midwinter-mist;
+}
+
+fieldset {
+  border: toRem(1) solid $l-d-yellow;
+}

@@ -1,0 +1,106 @@
+@include displays;
+@include flex-direction;
+@include flex-justify-alignment;
+@include flex-align-alignment;
+@include flex-align-content;
+
+@include Spacing;
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex_gap {
+  gap: toRem(12);
+}
+
+.flex_gap--1 {
+  gap: toRem(16);
+}
+
+.flex_gap--md {
+  gap: toRem(27.2);
+}
+
+.flex_gap--lg {
+  gap: toRem(43);
+}
+
+.flex_gap--lg-xl {
+  gap: toRem(64);
+}
+
+.flex_gap--xl {
+  gap: toRem(70);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid-analysis {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1.5fr;
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+  .grid-analysis {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: $screen-xl) {
+  .grid-analysis {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .d-flex {
+    flex-wrap: wrap;
+  }
+  .flex-lg-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  .flex_gap--xs {
+    gap: toRem(4);
+  }
+  
+}
+
+@media (max-width: $screen-md) {
+  .grid-analysis {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-md-nowrap {
+    flex-wrap: nowrap !important;
+  }
+}

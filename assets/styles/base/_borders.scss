@@ -1,0 +1,66 @@
+@include border_Radius;
+@include borders;
+
+.rounded {
+  border-radius: toRem(4);
+}
+
+.rounded-top {
+  border-top-left-radius: toRem(4);
+  border-top-right-radius: toRem(4);
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: toRem(4);
+  border-bottom-right-radius: toRem(4);
+}
+
+.rounded-left {
+  border-top-left-radius: toRem(4);
+  border-bottom-left-radius: toRem(4);
+}
+
+.rounded-right {
+  border-top-right-radius: toRem(4);
+  border-bottom-right-radius: toRem(4);
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.rounded-0 {
+  border-radius: 0;
+}
+
+.bt-0 {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.border-solid {
+  border: toRem(2) solid $l-d-yellow;
+}
+
+.border-raduis-white {
+  border: toRem(2) solid $White;
+  border-radius: toRem(22);
+}
+
+.border-raduis-darkBlue {
+  border: toRem(1) solid $nordic-noir;
+  border-radius: toRem(22);
+}
+
+.border-darkBlue {
+  border: toRem(1) solid $nordic-noir;
+  border-radius: toRem(8);
+}
+.border-midwinter-mist {
+  border: toRem(2) solid $midwinter-mist;
+  border-radius: toRem(8);
+}
+
+.box-shadow--full {
+  box-shadow: $Black--35 toRem(0) toRem(5) toRem(15);
+}

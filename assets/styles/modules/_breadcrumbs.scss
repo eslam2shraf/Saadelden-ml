@@ -1,0 +1,37 @@
+.breadcrumbs {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: toRem(6);
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: toRem(4);
+
+    &__arrow {
+      path {
+        stroke: $grey;
+        fill: $grey;
+      }
+    }
+
+    &__link {
+      position: relative;
+      font-size: toRem(19);
+      color: $Grey;
+      text-decoration: none;
+      font-weight: 800;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__active {
+      color: $Black;
+      font-weight: 800;
+      font-size: toRem(19);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.efficiency-card{
+    width: 100%;
+    &__filters{
+        justify-content: flex-end;
+        .sellersSelect{
+            height: 1.5rem;
+            width: 10.1875rem;
+           select {
+                    padding: 0rem;
+    
+                }
+        }
+    }
+    table{
+        tbody{
+            tr{
+                td{
+                    font-size: 0.875rem;
+                    .table_subtitle {
+                        font-size: 0.75rem;
+                        text-wrap: nowrap;
+
+                    }
+                }
+            }
+        }
+    }
+    .wrapper__Anomally__Analytics__graphAnalysis__tables__table__line{
+        width: 100% !important;
+    }
+}

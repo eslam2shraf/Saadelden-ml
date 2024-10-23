@@ -1,0 +1,410 @@
+.bg-LightGrey {
+  background-color: $Grey-blue;
+}
+
+.bg-white {
+  background-color: $White !important;
+}
+
+.bg-silver {
+  background-color: $Silver;
+}
+
+.bg-L_D_Yellow {
+  background-color: $l-d-yellow;
+}
+
+.bg-L_D_Yellow-50 {
+  background-color: $l-d-yellow--50;
+}
+.bg-L_D_Yellow-30 {
+  background-color: $l-d-yellow--30;
+}
+
+.bg_NORDIC {
+  background-color: $nordic-noir;
+  color: $White;
+}
+
+.text-NORDIC {
+  color: $nordic-noir;
+}
+
+.bg-MIDWINTER_MIST {
+  background-color: $midwinter-mist;
+}
+
+.text-black {
+  color: $Black;
+  opacity: 1;
+}
+
+.text-black--50 {
+  color: $Black;
+  opacity: 0.5;
+}
+
+.text_white--50 {
+  color: $White;
+  opacity: 0.5;
+}
+
+.text-soya_bean {
+  color: $soya-bean;
+  opacity: 1;
+}
+
+.text-grey {
+  color: $L_Grey;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-gold {
+  background-color: $Gold;
+}
+
+.text-gold {
+  color: $Gold !important;
+}
+
+.text-grediant {
+  background: linear-gradient(180deg, #A5D4DC 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+// neutral
+.bg-neutral_Black {
+  background-color: $Black;
+}
+
+.text-neutral_Black {
+  color: $Black;
+}
+
+.bg-neutral_D_Grey {
+  background-color: $D_Grey;
+}
+
+.text-neutral_D_Grey {
+  color: $D_Grey;
+}
+
+.bg-neutral_Grey {
+  background-color: $Grey;
+}
+
+.text-neutral_Grey {
+  color: $Grey;
+}
+
+.bg-neutral_L_Grey {
+  background-color: $L_Grey;
+}
+
+.text-neutral_L_Grey {
+  color: $L_Grey;
+}
+
+.bg-neutral_Grey-blue {
+  background-color: $Grey-blue;
+}
+
+.text-neutral_Grey-blue {
+  color: $Grey-blue;
+}
+
+.bg-neutral_Silver {
+  background-color: $Silver;
+}
+
+.text-neutral_Silver {
+  color: $Silver;
+}
+
+.bg-neutral_White {
+  background-color: $White;
+}
+
+.text-neutral_White {
+  color: $White;
+}
+
+//Primary
+.bg-primary_D_Blue {
+  background-color: $primary_D_Blue;
+}
+
+.text-primary_D_Blue {
+  color: $primary_D_Blue;
+}
+
+.bg-primary_Navy {
+  background-color: $primary_Navy;
+}
+
+.text-primary_Navy {
+  color: $primary_Navy;
+}
+
+.bg-primary_M_Blue {
+  background-color: $primary_M_Blue;
+}
+
+.text-primary_M_Blue {
+  color: $primary_M_Blue;
+}
+
+.bg-primary_Azure {
+  background-color: $primary_Azure;
+}
+
+.text-primary_Azure {
+  color: $primary_Azure;
+}
+
+.bg-primary_Sky {
+  background-color: $primary_Sky;
+}
+
+.text-primary_Sky {
+  color: $primary_Sky;
+}
+
+.bg-primary_L_Blue {
+  background-color: $primary_L_Blue;
+}
+
+.text-primary_L_Blue {
+  color: $primary_L_Blue;
+}
+
+//success
+.bg-success_D_Green {
+  background-color: $success_D_Green;
+}
+
+.text-success_D_Green {
+  color: $success_D_Green;
+}
+
+.bg-success_Forest {
+  background-color: $success_Forest;
+}
+
+.text-success_Forest {
+  color: $success_Forest;
+}
+
+.bg-success_M_Green {
+  background-color: $success_M_Green;
+}
+
+.text-success_M_Green {
+  color: $success_M_Green;
+}
+
+.bg-success_Herbal {
+  background-color: $success_Herbal;
+}
+
+.text-success_Herbal {
+  color: $success_Herbal;
+}
+
+.bg-success_Mint {
+  background-color: $success_Mint;
+}
+
+.text-success_Mint {
+  color: $success_Mint;
+}
+
+.bg-success_L_Green {
+  background-color: $success_L_Green;
+}
+
+.text-success_L_Green {
+  color: $success_L_Green;
+}
+
+//warning
+.bg-warning_D_Yellow {
+  background-color: $warning_D_Yellow;
+}
+
+.text-warning_D_Yellow {
+  color: $warning_D_Yellow;
+}
+
+.bg-warning_Lemon {
+  background-color: $warning_Lemon;
+}
+
+.text-warning_Lemon {
+  color: $warning_Lemon;
+}
+
+.bg-warning_M_Yellow {
+  background-color: $warning_M_Yellow;
+}
+
+.text-warning_M_Yellow {
+  color: $warning_M_Yellow;
+}
+
+.bg-warning_Straw {
+  background-color: $warning_Straw;
+}
+
+.text-warning_Straw {
+  color: $warning_Straw;
+}
+
+.bg-warning_Sand {
+  background-color: $warning_Sand;
+}
+
+.text-warning_Sand {
+  color: $warning_Sand;
+}
+
+.bg-warning_L_Yellow {
+  background-color: $warning_L_Yellow;
+}
+
+.text-warning_L_Yellow {
+  color: $warning_L_Yellow;
+}
+
+//danger
+.bg-success_D_Green {
+  background-color: $success_D_Green;
+}
+
+.text-success_D_Green {
+  color: $success_D_Green;
+}
+
+.bg-success_Forest {
+  background-color: $success_Forest;
+}
+
+.text-success_Forest {
+  color: $success_Forest;
+}
+
+.bg-success_M_Green {
+  background-color: $success_M_Green;
+}
+
+.text-success_M_Green {
+  color: $success_M_Green;
+}
+
+.bg-success_Herbal {
+  background-color: $success_Herbal;
+}
+
+.text-success_Herbal {
+  color: $success_Herbal;
+}
+
+.bg-success_Mint {
+  background-color: $success_Mint;
+}
+
+.text-success_Mint {
+  color: $success_Mint;
+}
+
+.bg-success_L_Green {
+  background-color: $success_L_Green;
+}
+
+.text-success_L_Green {
+  color: $success_L_Green;
+}
+
+//warning
+.bg-danger_D_Red {
+  background-color: $danger_D_Red;
+}
+
+.text-danger_D_Red {
+  color: $danger_D_Red;
+}
+
+.bg-danger_Scarlet {
+  background-color: $danger_Scarlet;
+}
+
+.text-danger_Scarlet {
+  color: $danger_Scarlet;
+}
+
+.bg-danger_M_Red {
+  background-color: $danger_M_Red;
+}
+
+.text-danger_M_Red {
+  color: $danger_M_Red;
+}
+
+.bg-danger_Raspberry {
+  background-color: $danger_Raspberry;
+}
+
+.text-danger_Raspberry {
+  color: $danger_Raspberry;
+}
+
+.bg-danger_Rubicund {
+  background-color: $danger_Rubicund;
+}
+
+.text-danger_Rubicund {
+  color: $danger_Rubicund;
+}
+
+.bg-danger_L_Red {
+  background-color: $danger_L_Red;
+}
+
+.text-danger_L_Red {
+  color: $danger_L_Red;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-PRAIRIE_DUST {
+  background-color: $prairie-dust;
+}
+
+.text-OROCHIMARU {
+  color: $orochimaru;
+}
+
+.text-grey {
+  color: $grey;
+}
+
+.text-orange {
+  color: $orange;
+}
+.text_status--red{
+  color:$status-red;
+}
+.text_status--green{
+  color:$status-green;
+}
+.text_status--orange{
+  color:$status-orange;
+}
